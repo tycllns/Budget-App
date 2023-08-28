@@ -1,0 +1,272 @@
+[gd_scene load_steps=18 format=3 uid="uid://b2bkkdl6jiv6o"]
+
+[ext_resource type="Theme" uid="uid://cmkvf640kg8dk" path="res://Themes/Budget_page.tres" id="1_oaujc"]
+[ext_resource type="Script" path="res://Scene/main_page.gd" id="2_frrgl"]
+[ext_resource type="Texture2D" uid="uid://brndb60i8t71" path="res://Assets/DollarSign.png" id="3_hvb02"]
+[ext_resource type="StyleBox" uid="uid://bs4piqy64uslm" path="res://Themes/Button/Main page button not pressed2.tres" id="4_esoky"]
+[ext_resource type="StyleBox" uid="uid://ct5oenmgnkvg" path="res://Themes/Panel/Edit_Entry_Panel.tres" id="4_y43m1"]
+[ext_resource type="StyleBox" uid="uid://i3e2stl8afmt" path="res://Themes/Button/Main page button2 hover.tres" id="5_k5pdd"]
+[ext_resource type="StyleBox" uid="uid://dmqqbgplptsno" path="res://Themes/Button/Main Page Button pressed2.tres" id="6_j5wa5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ysw0n"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1bj4n"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dj73t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yknaw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pbw7m"]
+bg_color = Color(0.788235, 0.498039, 0.101961, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_72tgj"]
+
+[sub_resource type="Animation" id="Animation_tgtgw"]
+resource_name = "Logo Pop"
+
+[sub_resource type="Animation" id="Animation_fanuk"]
+length = 0.001
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_j0k2p"]
+_data = {
+"Logo Pop": SubResource("Animation_tgtgw"),
+"RESET": SubResource("Animation_fanuk")
+}
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mmdlr"]
+
+[node name="Main Page" type="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("1_oaujc")
+script = ExtResource("2_frrgl")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0.843137)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -312.0
+offset_top = 312.0
+offset_right = 312.0
+offset_bottom = 1014.0
+grow_horizontal = 2
+texture = ExtResource("3_hvb02")
+expand_mode = 1
+
+[node name="Bottom Panel" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -280.0
+offset_top = -672.0
+offset_right = 280.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 20
+
+[node name="New" type="Button" parent="Bottom Panel"]
+custom_minimum_size = Vector2(0, 140)
+layout_mode = 2
+theme_override_styles/normal = ExtResource("4_esoky")
+theme_override_styles/hover = ExtResource("5_k5pdd")
+theme_override_styles/pressed = ExtResource("6_j5wa5")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ysw0n")
+text = "New"
+
+[node name="Open" type="Button" parent="Bottom Panel"]
+custom_minimum_size = Vector2(0, 140)
+layout_mode = 2
+theme_override_styles/normal = ExtResource("4_esoky")
+theme_override_styles/hover = ExtResource("5_k5pdd")
+theme_override_styles/pressed = ExtResource("6_j5wa5")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1bj4n")
+text = "Open"
+
+[node name="Charts" type="Button" parent="Bottom Panel"]
+custom_minimum_size = Vector2(0, 140)
+layout_mode = 2
+theme_override_styles/normal = ExtResource("4_esoky")
+theme_override_styles/hover = ExtResource("5_k5pdd")
+theme_override_styles/pressed = ExtResource("6_j5wa5")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dj73t")
+text = "Charts"
+
+[node name="Load" type="PopupPanel" parent="."]
+transparent_bg = true
+size = Vector2i(1080, 1920)
+transparent = true
+theme_override_styles/panel = SubResource("StyleBoxEmpty_yknaw")
+
+[node name="Panel" type="Panel" parent="Load"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1080.0
+offset_bottom = 1920.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_pbw7m")
+
+[node name="ItemList" type="ItemList" parent="Load/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -500.0
+offset_top = -756.0
+offset_right = 500.0
+offset_bottom = 744.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_72tgj")
+item_count = 1
+item_0/text = ""
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Load/Panel"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -273.835
+offset_top = -162.0
+offset_right = 273.834
+offset_bottom = -86.058
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 11
+
+[node name="Open" type="Button" parent="Load/Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Open"
+
+[node name="Delete" type="Button" parent="Load/Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Delete"
+
+[node name="Back" type="Button" parent="Load/Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Back"
+
+[node name="Load" type="Label" parent="Load/Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -59.0
+offset_top = 100.0
+offset_right = 59.0
+offset_bottom = 172.0
+grow_horizontal = 2
+text = "Load"
+
+[node name="Ids" type="ItemList" parent="Load"]
+visible = false
+offset_right = 1080.0
+offset_bottom = 1920.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_j0k2p")
+}
+
+[node name="TitleCreator" type="PopupPanel" parent="."]
+transparent_bg = true
+size = Vector2i(850, 270)
+transparent = true
+theme_override_styles/panel = SubResource("StyleBoxEmpty_mmdlr")
+
+[node name="Panel" type="Panel" parent="TitleCreator"]
+offset_right = 850.0
+offset_bottom = 270.0
+theme_override_styles/panel = ExtResource("4_y43m1")
+
+[node name="VBoxContainer" type="Control" parent="TitleCreator"]
+custom_minimum_size = Vector2(5.75, 0)
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_right = 850.0
+offset_bottom = 270.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="TitleCreator/VBoxContainer"]
+layout_mode = 2
+offset_top = 30.0
+offset_right = 850.0
+offset_bottom = 93.0
+text = "Title"
+horizontal_alignment = 1
+
+[node name="Title" type="LineEdit" parent="TitleCreator/VBoxContainer"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -393.965
+offset_top = 91.195
+offset_right = 393.965
+offset_bottom = 160.195
+grow_horizontal = 2
+placeholder_text = "Title"
+alignment = 1
+max_length = 150
+caret_blink = true
+caret_blink_interval = 0.5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TitleCreator/VBoxContainer"]
+layout_mode = 2
+offset_left = 244.0
+offset_top = 170.0
+offset_right = 606.0
+offset_bottom = 239.0
+size_flags_horizontal = 4
+
+[node name="Confirm" type="Button" parent="TitleCreator/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Confirm"
+
+[node name="Cancel" type="Button" parent="TitleCreator/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Cancel"
+
+[connection signal="pressed" from="Bottom Panel/New" to="." method="_on_new_pressed"]
+[connection signal="pressed" from="Bottom Panel/Open" to="." method="_on_open_pressed"]
+[connection signal="pressed" from="Bottom Panel/Charts" to="." method="_on_charts_pressed"]
+[connection signal="item_clicked" from="Load/Panel/ItemList" to="." method="_on_item_list_item_clicked"]
+[connection signal="pressed" from="Load/Panel/HBoxContainer/Open" to="." method="_on_load_open_pressed"]
+[connection signal="pressed" from="Load/Panel/HBoxContainer/Delete" to="." method="_on_load_delete_pressed"]
+[connection signal="pressed" from="Load/Panel/HBoxContainer/Back" to="." method="_on_back_pressed"]

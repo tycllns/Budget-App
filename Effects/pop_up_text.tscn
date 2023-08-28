@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://ba4f0g6s7kt0m"]
+
+[ext_resource type="Theme" uid="uid://cmkvf640kg8dk" path="res://Themes/Budget_page.tres" id="1_45ss7"]
+[ext_resource type="Script" path="res://Pop_up_text.gd" id="1_okcx1"]
+
+[node name="Pop_up_text" type="Label"]
+theme = ExtResource("1_45ss7")
+text = "dfsdf"
+script = ExtResource("1_okcx1")

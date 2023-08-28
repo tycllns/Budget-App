@@ -1,0 +1,259 @@
+[gd_scene load_steps=16 format=3 uid="uid://tr5busxy8htf"]
+
+[ext_resource type="Theme" uid="uid://cmkvf640kg8dk" path="res://Themes/Budget_page.tres" id="1_4ej3x"]
+[ext_resource type="Script" path="res://Scene/edit_page.gd" id="3_hswtb"]
+[ext_resource type="StyleBox" uid="uid://cqvckf0k5doo6" path="res://Themes/ItemList/ItemList.tres" id="4_nuvuj"]
+[ext_resource type="Texture2D" uid="uid://bjugncqogqrgw" path="res://Assets/Arrow.png" id="4_vabdr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cxjp7"]
+bg_color = Color(1, 0.698039, 0.678431, 1)
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yao1d"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2hqm2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yjkh8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qttla"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a85ry"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5885x"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wiuiy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fdksb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6bh6j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dit1j"]
+
+[node name="edit_page" type="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_4ej3x")
+script = ExtResource("3_hswtb")
+
+[node name="InfoBox" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -388.0
+offset_top = -320.0
+offset_right = 484.0
+offset_bottom = -32.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/h_separation = 20
+columns = 2
+
+[node name="Income" type="Label" parent="InfoBox"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Income
+"
+
+[node name="IncValue" type="Label" parent="InfoBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "0"
+
+[node name="Expenses" type="Label" parent="InfoBox"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Expenses"
+
+[node name="ExpValue" type="Label" parent="InfoBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "0"
+
+[node name="Savings" type="Label" parent="InfoBox"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Savings"
+
+[node name="SavValue" type="Label" parent="InfoBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "0
+"
+
+[node name="ControlBox" type="VBoxContainer" parent="."]
+z_index = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -508.0
+offset_top = 176.0
+offset_right = -380.0
+offset_bottom = 306.0
+grow_horizontal = 2
+
+[node name="Button" type="Button" parent="ControlBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 83
+text = "+"
+
+[node name="EntryBox" type="ItemList" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -516.0
+offset_top = -680.0
+offset_right = 164.0
+offset_bottom = 616.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 0
+theme_override_styles/panel = ExtResource("4_nuvuj")
+
+[node name="EntryBox2" type="ItemList" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 164.0
+offset_top = -680.0
+offset_right = 516.0
+offset_bottom = 616.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/guide_color = Color(0, 0, 0, 1)
+theme_override_styles/panel = SubResource("StyleBoxFlat_cxjp7")
+
+[node name="Title" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -444.0
+offset_top = 32.0
+offset_right = 436.0
+offset_bottom = 109.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0.588235, 0.0196078, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.588235, 0.0196078, 1)
+theme_override_colors/font_hover_color = Color(1, 0.588235, 0.0196078, 1)
+theme_override_colors/font_focus_color = Color(1, 0.588235, 0.0196078, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0.588235, 0.0196078, 1)
+theme_override_colors/font_disabled_color = Color(1, 0.588235, 0.0196078, 1)
+theme_override_colors/font_outline_color = Color(1, 0.588235, 0.0196078, 1)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_yao1d")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_2hqm2")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_yjkh8")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_qttla")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_a85ry")
+text = "title"
+
+[node name="Save Timer" type="Timer" parent="."]
+wait_time = 0.072
+autostart = true
+
+[node name="AcceptDialog" type="AcceptDialog" parent="."]
+title = "Change Title"
+size = Vector2i(800, 175)
+dialog_text = "This Title Already Exists"
+
+[node name="Ids" type="ItemList" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 64.0001
+offset_top = 608.0
+offset_right = 104.0
+offset_bottom = 648.0
+scale = Vector2(26.2, 13.76)
+
+[node name="PopupPanel" type="PopupPanel" parent="."]
+size = Vector2i(800, 250)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel"]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 796.0
+offset_bottom = 246.0
+
+[node name="Label" type="Label" parent="PopupPanel/VBoxContainer"]
+layout_mode = 2
+text = "New Title"
+horizontal_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="PopupPanel/VBoxContainer"]
+layout_mode = 2
+placeholder_text = "New Title"
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PopupPanel/VBoxContainer"]
+layout_mode = 2
+
+[node name="Confirm" type="Button" parent="PopupPanel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Confirm"
+
+[node name="Cancel" type="Button" parent="PopupPanel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Cancel"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -222.0
+offset_right = 144.0
+offset_bottom = -52.0
+grow_vertical = 0
+theme_override_constants/separation = 26
+
+[node name="exppercent" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "%"
+
+[node name="savpercent" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "%"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -152.0
+offset_top = 64.0
+offset_right = -24.0
+offset_bottom = 192.0
+grow_horizontal = 0
+size_flags_horizontal = 3
+theme_override_styles/normal = SubResource("StyleBoxEmpty_5885x")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wiuiy")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fdksb")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_6bh6j")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dit1j")
+icon = ExtResource("4_vabdr")
+
+[connection signal="pressed" from="ControlBox/Button" to="." method="_on_button_pressed"]
+[connection signal="item_clicked" from="EntryBox" to="." method="_on_entry_box_item_clicked"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

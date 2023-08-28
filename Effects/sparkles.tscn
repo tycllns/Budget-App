@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://dhc3dlwafebg8"]
+
+[ext_resource type="Script" path="res://Effects/sparkles.gd" id="1_rsjs5"]
+
+[sub_resource type="Curve" id="Curve_qc88o"]
+min_value = -1.0
+_data = [Vector2(0.0108108, 0.0909091), 0.0, 0.0, 0, 0, Vector2(0.994595, 0.909091), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[node name="Sparkles" type="CPUParticles2D"]
+emitting = false
+amount = 100
+lifetime = 0.2
+one_shot = true
+speed_scale = 0.6
+lifetime_randomness = 1.0
+emission_shape = 1
+emission_sphere_radius = 128.0
+direction = Vector2(0, -1)
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 50.0
+initial_velocity_max = 263.89
+orbit_velocity_min = -1.0
+orbit_velocity_max = 1.0
+scale_amount_min = 5.0
+scale_amount_max = 5.0
+color = Color(0.423529, 1, 1, 1)
+hue_variation_min = 1.0
+hue_variation_max = 1.0
+hue_variation_curve = SubResource("Curve_qc88o")
+script = ExtResource("1_rsjs5")

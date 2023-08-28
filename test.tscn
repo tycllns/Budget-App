@@ -1,0 +1,47 @@
+[gd_scene load_steps=2 format=3 uid="uid://bt6rhclje3y8d"]
+
+[ext_resource type="Script" path="res://test.gd" id="1_res7g"]
+
+[node name="Test" type="Node2D"]
+script = ExtResource("1_res7g")
+
+[node name="Add_budget" type="Button" parent="."]
+offset_left = 328.0
+offset_top = 231.0
+offset_right = 417.0
+offset_bottom = 291.0
+text = "budget"
+
+[node name="Add_entry" type="Button" parent="."]
+offset_left = 700.0
+offset_top = 231.0
+offset_right = 789.0
+offset_bottom = 291.0
+text = "entry"
+
+[node name="LineEdit" type="LineEdit" parent="."]
+offset_left = 363.0
+offset_top = 72.0
+offset_right = 747.0
+offset_bottom = 103.0
+
+[node name="Income" type="Label" parent="."]
+offset_left = 112.0
+offset_top = 439.0
+offset_right = 152.0
+offset_bottom = 462.0
+
+[node name="Expenses" type="Label" parent="."]
+offset_left = 326.0
+offset_top = 447.0
+offset_right = 366.0
+offset_bottom = 470.0
+
+[node name="Savings" type="Label" parent="."]
+offset_left = 516.0
+offset_top = 443.0
+offset_right = 556.0
+offset_bottom = 466.0
+
+[connection signal="pressed" from="Add_budget" to="." method="_on_add_budget_pressed"]
+[connection signal="pressed" from="Add_entry" to="." method="_on_add_entry_pressed"]
