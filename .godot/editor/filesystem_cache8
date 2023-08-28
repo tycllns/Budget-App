@@ -1,16 +1,15 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1693037421
+::res://::1693254300
 easy_charts.svg::CompressedTexture2D::1323931299037952993::1687900429::1687926360::1::::<><>::
-export_presets.cfg::TextFile::-1::1693037333::0::1::::<><>::
+export_presets.cfg::TextFile::-1::1693090640::0::1::::<><>::
 icon.svg::CompressedTexture2D::841248078844928832::1687064511::1687064516::1::::<><>::
 Pop_up_text.gd::GDScript::-1::1687899888::0::1::::<>Label<>::
 README.md::TextFile::-1::1687900428::0::1::::<><>::
 Scene.tscn::PackedScene::1062627952551474098::1687926532::0::1::::<><>::
 test.gd::GDScript::-1::1687069907::0::1::::<>Node2D<>::
 test.tscn::PackedScene::3785049235080875973::1687075802::0::1::::<><>::res://test.gd
-::res://addons/::1687911054
-::res://android/::1691781129
-::res://android/plugins/::1687237148
+::res://addons/::1693039696
+::res://android/::1693252305
 ::res://Assets/::1693036267
 Arrow.png::CompressedTexture2D::3059795479202284102::1686891674::1687926122::1::::<><>::
 Ball Particle.png::CompressedTexture2D::7690477592824331971::1686875328::1687926122::1::::<><>::
@@ -42,6 +41,8 @@ Yellow-Teal-Background.png::CompressedTexture2D::9109999643500596647::1693025787
 ::res://Autoloads/::1691781129
 Events.gd::GDScript::-1::1687896898::0::1::::<>Node<>::
 Global.gd::GDScript::-1::1687804974::0::1::::<>Node<>::
+::res://Budget-App/::1693039800
+::res://Budget-App2/::1693039858
 ::res://Effects/::1691781129
 pop_up_text.tscn::PackedScene::2446636232262343290::1689055848::0::1::::<><>::uid://cmkvf640kg8dk
 sparkles.gd::GDScript::-1::1687978690::0::1::::<>CPUParticles2D<>::
@@ -49,41 +50,35 @@ sparkles.tscn::PackedScene::7656418756982214113::1689055850::0::1::::<><>::res:/
 ::res://Engine/::1691781129
 engine.gd::GDScript::-1::1687970311::0::1::::<>Node<>::
 mathdoer.gd::GDScript::-1::1687899646::0::1::::<>Node<>::
-::res://export/::1691781129
-::res://export/Android/::1691781129
-::res://export/Web/::1691781129
-index.apple-touch-icon.png::CompressedTexture2D::593127888407010402::1687233893::1687926122::1::::<><>::
-index.icon.png::CompressedTexture2D::7730416988891121018::1687233893::1687926122::1::::<><>::
-index.png::CompressedTexture2D::1940195395613144978::1687233893::1687926122::1::::<><>::
 ::res://Resources/::1691781129
 user_data.gd::GDScript::-1::1687067486::0::1::::user_data<>Resource<>::
 ::res://saves/::1693035100
-save.tres::Resource/Resource::-1::1693035100::0::1::::<><>::
-::res://Scene/::1693037304
+save.tres::Resource/user_data::-1::1693090842::0::1::::<><>::res://Resources/user_data.gd
+::res://Scene/::1693090907
 budget_page2.gd::GDScript::-1::1687803997::0::1::::<>Panel<>::
 budget_page.gd::GDScript::-1::1687830629::0::1::::<>Panel<>::
-budget_page.tscn::PackedScene::2747439832520032762::1693037304::0::1::::<><>::uid://cmkvf640kg8dk::::res://Themes/Budget_page.tres<>res://Scene/budget_page.gd<>uid://cyb7nofqq2yaf::::res://Themes/Panel/budget_page.tres<>uid://c1es8kofius06::::res://Assets/UI/Exclamation.png
+budget_page.tscn::PackedScene::2747439832520032762::1693090907::0::1::::<><>::uid://cmkvf640kg8dk::::res://Themes/Budget_page.tres<>res://Scene/budget_page.gd<>uid://cyb7nofqq2yaf::::res://Themes/Panel/budget_page.tres<>uid://c1es8kofius06::::res://Assets/UI/Exclamation.png
 charting.gd::GDScript::-1::1693034301::0::1::::<>Panel<>::
-charting.tscn::PackedScene::3305922931219378913::1693037304::0::1::::<><>::uid://cmkvf640kg8dk::::res://Themes/Budget_page.tres<>uid://cyb7nofqq2yaf::::res://Themes/Panel/budget_page.tres<>res://Scene/charting.gd<>uid://cohc8wjoebrcc::::res://Assets/UI/White Border.png
-edit_budget_page.gd::GDScript::-1::1687970425::0::1::::<>Panel<>::
-edit_budget_page.tscn::PackedScene::9017024702530175183::1693037304::0::1::::<><>::uid://cmkvf640kg8dk::::res://Themes/Budget_page.tres<>res://Scene/edit_budget_page.gd<>uid://cyb7nofqq2yaf::::res://Themes/Panel/budget_page.tres<>uid://ct5oenmgnkvg::::res://Themes/Panel/Edit_Entry_Panel.tres<>uid://cohc8wjoebrcc::::res://Assets/UI/White Border.png
+charting.tscn::PackedScene::3305922931219378913::1693090907::0::1::::<><>::uid://cmkvf640kg8dk::::res://Themes/Budget_page.tres<>uid://sw10bioqdv36::::res://Themes/Panel/Panel Edit Budget Page.tres<>res://Scene/charting.gd
+edit_budget_page.gd::GDScript::-1::1693090558::0::1::::<>Panel<>::
+edit_budget_page.tscn::PackedScene::9017024702530175183::1693090907::0::1::::<><>::uid://cmkvf640kg8dk::::res://Themes/Budget_page.tres<>res://Scene/edit_budget_page.gd<>uid://sw10bioqdv36::::res://Themes/Panel/Panel Edit Budget Page.tres<>uid://ct5oenmgnkvg::::res://Themes/Panel/Edit_Entry_Panel.tres
 edit_entry_box.gd::GDScript::-1::1687728288::0::1::::<>Panel<>::
-edit_entry_box.tscn::PackedScene::5666810323606341743::1693037304::0::1::::<><>::uid://cmkvf640kg8dk::::res://Themes/Budget_page.tres<>res://Scene/edit_entry_box.gd<>uid://b2wjdb8kuqyc4::::res://Themes/Panel/entry_box.tres<>uid://c1es8kofius06::::res://Assets/UI/Exclamation.png
+edit_entry_box.tscn::PackedScene::5666810323606341743::1693090907::0::1::::<><>::uid://cmkvf640kg8dk::::res://Themes/Budget_page.tres<>res://Scene/edit_entry_box.gd<>uid://b2wjdb8kuqyc4::::res://Themes/Panel/entry_box.tres<>uid://c1es8kofius06::::res://Assets/UI/Exclamation.png
 edit_page.gd::GDScript::-1::1687933285::0::1::::<>Panel<>::
 edit_page.tscn::PackedScene::1370506825870405263::1689055849::0::1::::<><>::uid://cmkvf640kg8dk
-entry_box.gd::GDScript::-1::1687748167::0::1::::<>Panel<>::
-entry_box.tscn::PackedScene::6375696860018942266::1693037304::0::1::::<><>::uid://cmkvf640kg8dk::::res://Themes/Budget_page.tres<>res://Scene/entry_box.gd<>uid://b2wjdb8kuqyc4::::res://Themes/Panel/entry_box.tres<>uid://c1es8kofius06::::res://Assets/UI/Exclamation.png
-main_page.gd::GDScript::-1::1693029664::0::1::::<>ColorRect<>::
-main_page.tscn::PackedScene::4284209043524512752::1693037304::0::1::::<><>::uid://cmkvf640kg8dk::::res://Themes/Budget_page.tres<>res://Scene/main_page.gd<>uid://brndb60i8t71::::res://Assets/DollarSign.png<>uid://bs4piqy64uslm::::res://Themes/Button/Main page button not pressed2.tres<>uid://ct5oenmgnkvg::::res://Themes/Panel/Edit_Entry_Panel.tres<>uid://i3e2stl8afmt::::res://Themes/Button/Main page button2 hover.tres<>uid://dmqqbgplptsno::::res://Themes/Button/Main Page Button pressed2.tres<>uid://cohc8wjoebrcc::::res://Assets/UI/White Border.png
-::res://Themes/::1693034580
-Budget_page.tres::Theme::5637036928573514276::1693034580::0::1::::<><>::uid://h788b8gmulyk::::res://Themes/Button/Main Page Button Hover.tres<>uid://ca7sfuqld4pjs::::res://Assets/UI/scroll up.png<>uid://b2awnn4tjetpd::::res://Assets/UI/Scrollbar not clicked.png<>uid://b2py3lcd1c0s6::::res://Themes/Button/Main page button not pressed.tres<>uid://t3q6vi0h6luf::::res://Themes/Fonts/Work Sans/static/WorkSans-Black.ttf<>uid://c3tgnulgutdu7::::res://Themes/Button/Main page button pressed.tres<>uid://bmlp6v88ohajm::::res://Assets/UI/Scrollbar clicked.png
-::res://Themes/Button/::1693034669
+entry_box.gd::GDScript::-1::1693088800::0::1::::<>Panel<>::
+entry_box.tscn::PackedScene::6375696860018942266::1693090907::0::1::::<><>::uid://cmkvf640kg8dk::::res://Themes/Budget_page.tres<>res://Scene/entry_box.gd<>uid://b2wjdb8kuqyc4::::res://Themes/Panel/entry_box.tres<>uid://c1es8kofius06::::res://Assets/UI/Exclamation.png
+main_page.gd::GDScript::-1::1693089044::0::1::::<>Panel<>::
+main_page.tscn::PackedScene::4284209043524512752::1693090907::0::1::::<><>::uid://cmkvf640kg8dk::::res://Themes/Budget_page.tres<>res://Scene/main_page.gd<>uid://brndb60i8t71::::res://Assets/DollarSign.png<>uid://bs4piqy64uslm::::res://Themes/Button/Main page button not pressed2.tres<>uid://ct5oenmgnkvg::::res://Themes/Panel/Edit_Entry_Panel.tres<>uid://i3e2stl8afmt::::res://Themes/Button/Main page button2 hover.tres<>uid://dmqqbgplptsno::::res://Themes/Button/Main Page Button pressed2.tres
+::res://Themes/::1693089277
+Budget_page.tres::Theme::5637036928573514276::1693089277::0::1::::<><>::uid://h788b8gmulyk::::res://Themes/Button/Main Page Button Hover.tres<>uid://ca7sfuqld4pjs::::res://Assets/UI/scroll up.png<>uid://b2awnn4tjetpd::::res://Assets/UI/Scrollbar not clicked.png<>uid://b2py3lcd1c0s6::::res://Themes/Button/Main page button not pressed.tres<>uid://t3q6vi0h6luf::::res://Themes/Fonts/Work Sans/static/WorkSans-Black.ttf<>uid://c3tgnulgutdu7::::res://Themes/Button/Main page button pressed.tres<>uid://bmlp6v88ohajm::::res://Assets/UI/Scrollbar clicked.png
+::res://Themes/Button/::1693037428
 Main page button2 hover.tres::StyleBoxFlat::619605385939912303::1693034669::0::1::::<><>::
 Main Page Button Hover.tres::StyleBoxFlat::559444689347638470::1693034484::0::1::::<><>::
 Main page button not pressed2.tres::StyleBoxFlat::3710612744185121050::1693033385::0::1::::<><>::
 Main page button not pressed.tres::StyleBoxFlat::4313992919304223863::1693034484::0::1::::<><>::
 Main Page Button pressed2.tres::StyleBoxFlat::8035531815311586360::1693034627::0::1::::<><>::
-Main page button pressed.tres::StyleBoxFlat::6777740751615548716::1693034376::0::1::::<><>::
+Main page button pressed.tres::StyleBoxFlat::6777740751615548716::1693037428::0::1::::<><>::
 ::res://Themes/Fonts/::1691781129
 ::res://Themes/Fonts/70s disco/::1691781129
 70SdiscopersonaluseBold-w14z2.otf::FontFile::3301548347359500894::1689030308::1688431541::1::::<><>::
@@ -134,7 +129,8 @@ WorkSans-Thin.ttf::FontFile::277913052315923326::1689030332::1688145087::1::::<>
 WorkSans-ThinItalic.ttf::FontFile::3796789368039434525::1689030333::1688145087::1::::<><>::
 ::res://Themes/ItemList/::1691781129
 ItemList.tres::StyleBoxFlat::5939354392085997483::1689028135::0::1::::<><>::
-::res://Themes/Panel/::1693032558
+::res://Themes/Panel/::1693089120
 budget_page.tres::StyleBoxFlat::6461404895342690813::1693029253::0::1::::<><>::
-Edit_Entry_Panel.tres::StyleBoxFlat::181447606230487296::1693032558::0::1::::<><>::
-entry_box.tres::StyleBoxFlat::4327487686809536897::1693031008::0::1::::<><>::
+Edit_Entry_Panel.tres::StyleBoxFlat::181447606230487296::1693037428::0::1::::<><>::
+entry_box.tres::StyleBoxFlat::4327487686809536897::1693037428::0::1::::<><>::
+Panel Edit Budget Page.tres::StyleBoxFlat::1310438848272854403::1693089120::0::1::::<><>::

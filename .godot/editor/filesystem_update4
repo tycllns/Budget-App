@@ -2,12 +2,11 @@ res://Scene/main_page.tscn
 res://Themes/Button/Main page button pressed.tres
 res://Themes/Budget_page.tres
 res://Themes/Panel/entry_box.tres
+res://Themes/Panel/Panel Edit Budget Page.tres
 res://Themes/Panel/Edit_Entry_Panel.tres
+res://Autoloads/Global.gd
 res://Scene/edit_budget_page.tscn
 res://Scene/charting.tscn
 res://Scene/budget_page.tscn
 res://Scene/edit_entry_box.tscn
 res://Scene/entry_box.tscn
-res://Scene/entry_box.gd
-res://Scene/main_page.gd
-res://Scene/edit_budget_page.gd

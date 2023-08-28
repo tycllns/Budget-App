@@ -12,6 +12,8 @@ config_version=5
 
 config/name="Budgeting App V2"
 run/main_scene="res://Scene/main_page.tscn"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="Budgeting"
 config/features=PackedStringArray("4.1", "Mobile")
 boot_splash/show_image=false
 config/icon="res://Assets/DollarSign.png"

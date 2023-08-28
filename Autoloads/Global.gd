@@ -1,7 +1,7 @@
 extends Node
 
 var data = []
-var save_path = "res://saves/save.tres"
+var save_path = "user://save.tres"
 var current 
 var new_budget
 
